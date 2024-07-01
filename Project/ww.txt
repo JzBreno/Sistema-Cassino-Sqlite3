@@ -1,0 +1,43 @@
+nome = input('Nome: ')
+email = input('Email: ')
+cpf = input('Cpf: Somente Numeros... ')
+score = int(input('Scores: '))
+data = (nome, email, cpf, score)
+
+
+menu = """"
+    |1| - Inserir Jogador
+    |2| - Update Jogador
+    |3| - Procurar Jogador
+    |4| - Listar Todos Jogadores
+    |5| - Deletar Jogador
+    |6| - Sair
+"""
+
+while True:
+    print(menu)
+    flag = int(input('Digite sua Opção: '))
+
+    match flag:
+        
+        case 1:
+            sql3.InsertRegister(cur, con, data)
+        case 2:
+            pass
+        case 3:
+            pass
+        case 4:
+            pass
+        case 5:
+            pass
+        case 6:
+            break
+
+
+
+Frameworks
+
+pytest - testes unitarios
+pandas - OK
+sqlalchemy - bancos
+django - djangoninja
